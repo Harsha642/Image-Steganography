@@ -1,3 +1,5 @@
+                                              ###encode_msg2Img###
+
 import numpy as np
 from PIL import Image
 
@@ -75,6 +77,8 @@ def Arr2Img(img_Arr,img):
     return img_en
 
 
+
+                                            ###decode_Img2msg###
 import numpy as np
 from PIL import Image
  
@@ -116,11 +120,12 @@ def decode_msg(User_msg):
      
     return final_msg     
 
-
+                                              ###MAIN Function###
+    
 print("USER : Enter the message")
 User_msg=str(input())
 print("Enter the name of the image ")
-img=Image.open(str(input()))
+img=Image.open(str(input()))  #the image should in the same directory:to avoid errors there is testinput_1 with the code in the directory
 bin_encoded_msg=encode_msg(User_msg)
 encode_msg_image_1=encode_msg_image(img,bin_encoded_msg)
 final_image=Arr2Img(encode_msg_image_1,img)
