@@ -125,7 +125,7 @@ def decode_msg(User_msg):
 print("USER : Enter the message")
 User_msg=str(input())
 print("Enter the name of the image ")
-img=Image.open(str(input()))  #the image should in the same directory:to avoid errors there is testinput_1 with the code in the directory
+img=Image.open(str(input()))  #the image should in the same directory:to avoid errors there is testinput1.jpg with the code in the directory
 bin_encoded_msg=encode_msg(User_msg)
 encode_msg_image_1=encode_msg_image(img,bin_encoded_msg)
 final_image=Arr2Img(encode_msg_image_1,img)
