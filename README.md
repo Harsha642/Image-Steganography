@@ -26,5 +26,3 @@ Decode the data :
 To decode, three pixels are read at a time, till the last value is odd, which means the message is over. Every 3-pixels contain a binary data, which can be extracted by the same encoding logic. If the value if odd the binary bit is 1 else 0.
  
 
-For further information :https://www.geeksforgeeks.org/image-based-steganography-using-python/
-
